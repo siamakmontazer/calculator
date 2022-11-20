@@ -2,8 +2,8 @@
 
 class NumericValidator implements IValidator
 {
-    public function validate(int $firstOperand, int $secondOperand): bool
+    public function validate($firstOperand, $secondOperand): bool
     {
-        return is_numeric($firstNumber) && is_numeric($secondNumber);
+        return is_numeric($firstOperand) && is_numeric($secondOperand);
     }
 }

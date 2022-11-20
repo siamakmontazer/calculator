@@ -2,5 +2,5 @@
 
 interface IValidator
 {
-    public function validate(int $firstOperand, int $secondOperand): bool;
+    public function validate($firstOperand, $secondOperand): bool;
 }
