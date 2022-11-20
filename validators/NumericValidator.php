@@ -1,6 +1,6 @@
 <?php
 
-class NumericValidation implements IValidation
+class NumericValidator implements IValidator
 {
     public function validate(int $firstOperand, int $secondOperand): bool
     {

@@ -29,7 +29,7 @@ abstract class AbstractOperation
 
     public function validate(): self
     {
-        if((new NumericValidation($this->firstOperand, $this->secondOperand))->validate()){
+        if((new NumericValidator($this->firstOperand, $this->secondOperand))->validate()){
             return $this;
         }
 
