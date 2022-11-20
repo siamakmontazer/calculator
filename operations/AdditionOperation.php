@@ -1,6 +1,6 @@
 <?php
 
-class PlusOperation extends AbstractOperation
+class AdditionOperation extends AbstractOperation
 {
     public function operate(): int
     {

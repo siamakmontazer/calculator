@@ -1,6 +1,6 @@
 <?php
 
-class DivideOperation extends AbstractOperation
+class DivisionOperation extends AbstractOperation
 {
     public function validate(): self
     {
@@ -10,7 +10,7 @@ class DivideOperation extends AbstractOperation
 
     protected function validateNonZeroDivisor(): self
     {
-        if($this->getSecondOperand() > -1){
+        if($this->getSecondOperand() != 0){
             return $this;
         }
 

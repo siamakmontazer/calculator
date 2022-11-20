@@ -3,10 +3,10 @@
 class OperationFactory
 {
     CONST PERMITTED_OPERATIONS = [
-        '+' => 'Plus',
-        '-' => 'Minus',
-        '*' => 'Multiply',
-        '/' => 'Divide'
+        '+' => 'Addition',
+        '-' => 'Substraction',
+        '*' => 'Multipliction',
+        '/' => 'Division'
     ];
 
     public static function createOperation(string $operator): AbstractOperation

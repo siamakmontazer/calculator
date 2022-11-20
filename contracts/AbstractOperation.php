@@ -36,5 +36,8 @@ abstract class AbstractOperation
         throw new NumberFormatException();
     }
 
+    // Notes: another option is to validate in this function withouth throwing exception,
+    // I separated validation from operate function, and I used exceptions to give it more flexibility in terms of SRP, OCP principales
+    // and client error handling
     public abstract function operate(): int;
 }
